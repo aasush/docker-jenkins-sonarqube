@@ -1,7 +1,7 @@
 FROM java:8-jdk
 
 RUN apt-get update && apt-get install -y git curl zip && rm -rf /var/lib/apt/lists/*
-RUN sudo apt-get install -y maven
+RUN apt-get install -y maven
 RUN apt-get update -y
 RUN apt-get install -y vim
 ENV JENKINS_HOME /var/jenkins_home
