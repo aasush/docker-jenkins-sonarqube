@@ -1,0 +1,13 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/akmaharshi/petclinic.git # timeout=10
+Fetching upstream changes from https://github.com/akmaharshi/petclinic.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/akmaharshi/petclinic.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a06c264054a742d5a686f80e9c6a0e748fab563f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f a06c264054a742d5a686f80e9c6a0e748fab563f
+Commit message: "re-arranged sonarqube stage"
+ > git rev-list --no-walk 10ba469f33a3244982957eb2fb7377174f3c9fc7 # timeout=10

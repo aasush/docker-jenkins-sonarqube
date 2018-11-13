@@ -1,0 +1,4 @@
+[petclinic@2] Running shell script
++ mvn clean package
+Sending interrupt signal to process
+Terminated

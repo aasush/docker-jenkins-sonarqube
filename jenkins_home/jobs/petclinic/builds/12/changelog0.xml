@@ -1,0 +1,22 @@
+commit 10ba469f33a3244982957eb2fb7377174f3c9fc7
+tree bdfd76e38c06fe5f75168a9256961abf2117684d
+parent 3f430ba9356111a18d8c6b5eeb431df0151477a9
+author Anil <anilmaharshi.p@gmail.com> 2018-09-03 21:03:05 +0530
+committer GitHub <noreply@github.com> 2018-09-03 21:03:05 +0530
+
+    re-arranged sonarqube stage
+
+
+
+:100644 100644 30cbbc74e3cb0526d625c92894cedf70ff751954 86e9ea87a8b2188db48bfd28d06de5f396881c80 M	Jenkinsfile
+commit 3f430ba9356111a18d8c6b5eeb431df0151477a9
+tree fa216e3387fa09aa5bf0e35db93a44b27c95755c
+parent 12742e8a6c7117a701f84ec3f68403a7f8ed1f20
+author Anil <anilmaharshi.p@gmail.com> 2018-09-03 20:54:00 +0530
+committer GitHub <noreply@github.com> 2018-09-03 20:54:00 +0530
+
+    Added sonar qulaity gate in the sonar stage itself
+
+
+
+:100644 100644 6c312ecb5ab780de9122f7f4443fe50e5fef501c 30cbbc74e3cb0526d625c92894cedf70ff751954 M	Jenkinsfile

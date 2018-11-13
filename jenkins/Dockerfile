@@ -1,4 +1,5 @@
-FROM java:8-jdk
+#FROM java:8-jdk
+FROM maven:3.5.4-jdk-8
 
 RUN apt-get update && apt-get install -y git curl zip && rm -rf /var/lib/apt/lists/*
 RUN apt-get install -y maven
@@ -6,6 +7,10 @@ RUN apt-get update -y
 RUN apt-get install -y vim
 ENV JENKINS_HOME /var/jenkins_home
 ENV JENKINS_SLAVE_AGENT_PORT 50000
+
+#FROM maven:alpine
+
+RUN mvn --version
 
 ARG user=jenkins
 ARG group=jenkins
@@ -35,9 +40,9 @@ RUN curl -fsSL https://github.com/krallin/tini/releases/download/v0.5.0/tini-sta
 COPY init.groovy /usr/share/jenkins/ref/init.groovy.d/tcp-slave-agent-port.groovy
 
 ARG JENKINS_VERSION
-ENV JENKINS_VERSION ${JENKINS_VERSION:-2.0}
+ENV JENKINS_VERSION ${JENKINS_VERSION:-2.121.1}
 ARG JENKINS_SHA
-ENV JENKINS_SHA ${JENKINS_SHA:-da06f963edb627f0ced2fce612f9985d1928f79b}
+ENV JENKINS_SHA ${JENKINS_SHA:-c01f29832c83715f0ca57086e1bc823585f41d97}
 # could use ADD but this one does not check Last-Modified header 
 # see https://github.com/docker/docker/issues/8331
 RUN curl -fsSL http://repo.jenkins-ci.org/public/org/jenkins-ci/main/jenkins-war/${JENKINS_VERSION}/jenkins-war-${JENKINS_VERSION}.war -o /usr/share/jenkins/jenkins.war \

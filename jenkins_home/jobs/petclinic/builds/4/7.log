@@ -1,0 +1,13 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/akmaharshi/petclinic.git # timeout=10
+Fetching upstream changes from https://github.com/akmaharshi/petclinic.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/akmaharshi/petclinic.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8b59a1ccf2fd1c2a119691453fde9444f5647c2b (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 8b59a1ccf2fd1c2a119691453fde9444f5647c2b
+Commit message: "sonar changes"
+ > git rev-list --no-walk eac1030fb5596fe9d383d99e153dd7dfc3c468b7 # timeout=10

@@ -1,0 +1,13 @@
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/akmaharshi/petclinic.git # timeout=10
+Fetching upstream changes from https://github.com/akmaharshi/petclinic.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/akmaharshi/petclinic.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision b6bcacd902f05c555d8e92db6265c41dc61282de (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b6bcacd902f05c555d8e92db6265c41dc61282de
+Commit message: "added quality gate in sonar stage itself"
+ > git rev-list --no-walk b6bcacd902f05c555d8e92db6265c41dc61282de # timeout=10

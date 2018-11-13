@@ -1,0 +1,44 @@
+commit b6bcacd902f05c555d8e92db6265c41dc61282de
+tree 6e5d55a0f853c42efdcbd10a203d8bf6f7e5ff9d
+parent d8bb5a1d2e5dc26f8853b8a0911c520b95d5d6fb
+author Anil <anilmaharshi.p@gmail.com> 2018-09-21 21:52:26 +0530
+committer GitHub <noreply@github.com> 2018-09-21 21:52:26 +0530
+
+    added quality gate in sonar stage itself
+
+
+
+:100644 100644 ff00cc5fdc90f7fb900a9c0826e8ab47acf5ff69 198f2b603e7e38907bf749586827e8c6225d3d8d M	Jenkinsfile
+commit d8bb5a1d2e5dc26f8853b8a0911c520b95d5d6fb
+tree 360ca5104084a1e97f6f4fe94d62cf49921f2d2d
+parent 5fe11073a220eceeaa8bd81df1db0739feb9acdd
+author Anil <anilmaharshi.p@gmail.com> 2018-09-09 15:32:59 +0530
+committer GitHub <noreply@github.com> 2018-09-09 15:32:59 +0530
+
+    test file
+
+
+
+:100644 000000 9daeafb9864cf43055ae93beb0afd6c7d144bfa4 0000000000000000000000000000000000000000 D	test
+commit 5fe11073a220eceeaa8bd81df1db0739feb9acdd
+tree e6afa92cbc79cdb19c7f550b9442b62d683d786e
+parent 6cb267ea16d86a854ff09535c8d5d2078e696fc1
+author Anil <anilmaharshi.p@gmail.com> 2018-09-09 15:32:37 +0530
+committer GitHub <noreply@github.com> 2018-09-09 15:32:37 +0530
+
+    test file
+
+
+
+:100644 000000 2d774df4100c7328676ccbaae9c2bb2c1c419cf2 0000000000000000000000000000000000000000 D	filetofetch
+commit 6cb267ea16d86a854ff09535c8d5d2078e696fc1
+tree a440378d3dd8e2065b0dd61a4f1e6c607cb8e97c
+parent c9798b40c80d6e8864161d05ea9dfc4894cc0648
+author Anil <anilmaharshi.p@gmail.com> 2018-09-09 15:32:22 +0530
+committer GitHub <noreply@github.com> 2018-09-09 15:32:22 +0530
+
+    test file
+
+
+
+:100644 000000 2d774df4100c7328676ccbaae9c2bb2c1c419cf2 0000000000000000000000000000000000000000 D	fetchfile

@@ -1,0 +1,24 @@
+[petclinic] Running shell script
++ mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.3.0.603:sonar -f pom.xml -Dsonar.projectKey=com.petclinic:all:master -Dsonar.login=admin -Dsonar.password=admin -Dsonar.language=java -Dsonar.sources=. -Dsonar.tests=.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------< org.springframework.samples:spring-petclinic >------------
+[INFO] Building petclinic 4.2.6-SNAPSHOT
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- sonar-maven-plugin:3.3.0.603:sonar (default-cli) @ spring-petclinic ---
+[INFO] User cache: /var/jenkins_home/.sonar/cache
+[ERROR] SonarQube server [http://localhost:9000] can not be reached
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.944 s
+[INFO] Finished at: 2018-09-03T14:46:07Z
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.3.0.603:sonar (default-cli) on project spring-petclinic: Unable to execute SonarQube: Fail to get bootstrap index from server: Failed to connect to localhost/127.0.0.1:9000: Connection refused (Connection refused) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

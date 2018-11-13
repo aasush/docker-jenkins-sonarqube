@@ -1,0 +1,18 @@
+Cloning the remote Git repository
+Cloning repository https://github.com/akmaharshi/petclinic.git
+ > git init /var/jenkins_home/workspace/petclinic@2 # timeout=10
+Fetching upstream changes from https://github.com/akmaharshi/petclinic.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/akmaharshi/petclinic.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/akmaharshi/petclinic.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/akmaharshi/petclinic.git # timeout=10
+Fetching upstream changes from https://github.com/akmaharshi/petclinic.git
+ > git fetch --tags --progress https://github.com/akmaharshi/petclinic.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d16cdd37a619fcdb5338ca717849f821c821dd72 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d16cdd37a619fcdb5338ca717849f821c821dd72
+Commit message: "add file to fetch"
+ > git rev-list --no-walk d16cdd37a619fcdb5338ca717849f821c821dd72 # timeout=10
